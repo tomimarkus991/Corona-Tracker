@@ -1,6 +1,6 @@
 A boilerplate for fast react development
 <h1>React Webpack Babel Bulma Boilerplate</h1>
-
+![COVID-19 Tracker](https://ibb.co/4MTdWjw)
 <table style="border: none;margin:0 auto;">
   <tr style="border: none;">
       <td style="border: none;">
@@ -40,7 +40,7 @@ git clone
 Cd into the project folder
 
 ```bash
-cd react-webpack-babel-bulma
+cd Corona-Tracker
 ```
 
 #### With Yarn
