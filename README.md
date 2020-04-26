@@ -1,5 +1,5 @@
-# React Webpack Babel Bulma Boilerplate
-![COVID-19 Tracker](https://i.ibb.co/0ZMtqfp/corona-tracker.png)
+# Corona Tracker
+![COVID-19 Tracker](https://i.ibb.co/NpGb1vx/corona-tracker1.png)
 <table style="border: none;margin:0 auto;">
   <tr style="border: none;">
       <td style="border: none;">
