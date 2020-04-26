@@ -50,10 +50,6 @@ const config = {
 				],
 			},
 			{
-				test: /\.css$/,
-				use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
-			},
-			{
 				test: /\.(png|svg|jpg|gif|pdf)$/,
 				use: ['file-loader'],
 			},
