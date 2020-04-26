@@ -1,4 +1,3 @@
-### A boilerplate for fast react development
 # React Webpack Babel Bulma Boilerplate
 ![COVID-19 Tracker](https://i.ibb.co/0ZMtqfp/corona-tracker.png)
 <table style="border: none;margin:0 auto;">
