@@ -13,37 +13,41 @@ const Chart = ({ data2, country }) => {
 		fetchAPI();
 	}, []);
 	if (country) {
-		const lineChart2 = data2[0] ? (
-			<Line
-				data={{
-					labels: data2.map(({ date }) => moment(date).format('L')),
-					datasets: [
-						{
-							data: data2.map(({ confirmed }) => confirmed),
-							label: 'Infected',
-							borderColor: '#3333ff',
-							fill: true,
-						},
-						{
-							data: data2.map(({ recovered }) => recovered),
-							label: 'Recovered',
-							borderColor: 'Green',
-							backgroundColor: 'rgba(0, 255, 0, 0.5)',
-							fill: true,
-						},
-						{
-							data: data2.map(({ deaths }) => deaths),
-							label: 'Deaths',
-							borderColor: 'red',
-							backgroundColor: 'rgba(255, 0, 0, 0.7)',
-							fill: true,
-						},
-					],
-					options: { legend: { display: true, labels: { fontSize: 30 } } },
-				}}
-			/>
-		) : null;
-		return <div className="container">{lineChart2}</div>;
+		if (data2[0] == undefined) {
+			return `Thankfully no cases yet in ${country}`;
+		} else {
+			const lineChart2 = data2[0] ? (
+				<Line
+					data={{
+						labels: data2.map(({ date }) => moment(date).format('L')),
+						datasets: [
+							{
+								data: data2.map(({ confirmed }) => confirmed),
+								label: 'Infected',
+								borderColor: '#3333ff',
+								fill: true,
+							},
+							{
+								data: data2.map(({ recovered }) => recovered),
+								label: 'Recovered',
+								borderColor: 'Green',
+								backgroundColor: 'rgba(0, 255, 0, 0.5)',
+								fill: true,
+							},
+							{
+								data: data2.map(({ deaths }) => deaths),
+								label: 'Deaths',
+								borderColor: 'red',
+								backgroundColor: 'rgba(255, 0, 0, 0.7)',
+								fill: true,
+							},
+						],
+						options: { legend: { display: true, labels: { fontSize: 30 } } },
+					}}
+				/>
+			) : null;
+			return <div className="container">{lineChart2}</div>;
+		}
 	} else {
 		const lineChart = dailyData.length ? (
 			<Line

@@ -24,7 +24,7 @@ const Cards = ({ data: { modifiedData } }) => {
 									separator=","></CountUp>
 							</Typography>
 							<Typography color="textSecondary">
-								{new Date(todayDate).toLocaleString}
+								{new Date(todayDate).toDateString()}
 							</Typography>
 							<Typography variant="body2">
 								Number of active cases of COVID-19
@@ -47,7 +47,7 @@ const Cards = ({ data: { modifiedData } }) => {
 								{new Date(todayDate).toDateString()}
 							</Typography>
 							<Typography variant="body2">
-								Number of reacoveries from COVID-19
+								Number of recoveries from COVID-19
 							</Typography>
 						</CardContent>
 					</Grid>
@@ -114,7 +114,7 @@ const Cards = ({ data: { modifiedData } }) => {
 							{new Date(modifiedData.date).toDateString()}
 						</Typography>
 						<Typography variant="body2">
-							Number of reacoveries from COVID-19
+							Number of recoveries from COVID-19
 						</Typography>
 					</CardContent>
 				</Grid>
