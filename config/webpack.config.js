@@ -29,7 +29,7 @@ const config = {
 			},
 		]),
 		new MiniCssExtractPlugin({
-			filename: './src/sass/styles.scss',
+			filename: './src/sass/main.sass',
 		}),
 	],
 	module: {
@@ -48,6 +48,10 @@ const config = {
 					{ loader: 'css-loader' },
 					{ loader: 'sass-loader' },
 				],
+			},
+			{
+				test: /\.css$/,
+				use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
 			},
 			{
 				test: /\.(png|svg|jpg|gif|pdf)$/,
