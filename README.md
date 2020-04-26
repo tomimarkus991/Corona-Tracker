@@ -1,6 +1,6 @@
 A boilerplate for fast react development
 <h1>React Webpack Babel Bulma Boilerplate</h1>
-<img src="https://ibb.co/4MTdWjw" alt="COVID-19 Tracker"/>
+<img src="https://ibb.co/4MTdWjw" alt="COVID-19 Tracker" width=800/>
 <table style="border: none;margin:0 auto;">
   <tr style="border: none;">
       <td style="border: none;">
