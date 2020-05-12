@@ -36,7 +36,7 @@ class App extends React.Component {
 						<img className="covidImage" src={coronaImage}></img>
 					</a>
 				</div>
-				<div className="shit">
+				<div className="big">
 					<div className="column is-full">
 						<Cards data={data}></Cards>
 					</div>
